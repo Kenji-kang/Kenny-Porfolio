@@ -10,7 +10,7 @@ html {
 }
 
 body {
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Playfair Display', serif;
   background: #fff;
   color: #333;
   line-height: 1.7;
@@ -292,4 +292,5 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+
 
