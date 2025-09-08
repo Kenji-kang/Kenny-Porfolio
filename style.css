@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -45,10 +44,11 @@ header {
 .nav-links {
   display: flex;
   gap: 20px;
+  list-style: none;
 }
 
 .nav-links a {
-  color: #333;
+  color: black;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s;
@@ -58,20 +58,20 @@ header {
   color: #FCCB06;
 }
 
+/* resume button on navbar */
 .resume-btn {
-  padding: 3px 16px;
+  padding: 8px 16px;
   margin-left: 16px;
   background: #FCCB06;
   color: #333;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition:  0.3s;
 }
 
 .resume-btn:hover {
   background: #e0b704;
-  transform: translateY(-2px);
 }
 
 /* Hero */
@@ -119,7 +119,7 @@ header {
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition:  0.3s;
 }
 
 .btn:hover {
@@ -134,7 +134,7 @@ header {
   text-align: center;
 }
 
-.section.light {
+.section.ken {
   background: #f9f9f9;
 }
 
@@ -163,6 +163,20 @@ header {
   text-align: justify;
 }
 
+button {
+  padding: 12px 30px;
+  background: #FCCB06;
+  color: #333;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition:  0.3s;
+}
+
+button:hover {
+  background: #e0b805;
+}
+
 /* Skills */
 .skills-grid {
   display: grid;
@@ -175,12 +189,11 @@ header {
   background: #B1DDF1;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: background 0.3s, transform 0.3s;
+  transition:  0.3s, transform 0.3s;
 }
 
 .skill-box:hover {
   background-color: #FCCB06;
-  transform: translateY(-8px);
 }
 
 .skill-box h3 {
@@ -198,12 +211,11 @@ header {
   padding: 30px;
   background: #B1DDF1;
   border-radius: 10px;
-  transition: background 0.3s, transform 0.3s;
+  transition:  0.3s, transform 0.3s;
 }
 
 .project-box:hover {
   background: #FCCB06;
-  transform: translateY(-8px);
 }
 
 .project-box h3 {
@@ -229,7 +241,7 @@ header {
 }
 
 .picture:hover {
-  transform: translateY(-6px) scale(1.02);
+  transform: scale(1.02);
 }
 
 .picture img {
