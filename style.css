@@ -1,0 +1,283 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FCCB06;
+}
+
+.resume-btn {
+  padding: 3px 16px;
+  margin-left: 16px;
+  background: #FCCB06;
+  color: #333;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.resume-btn:hover {
+  background: #e0b704;
+  transform: translateY(-2px);
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #FCCB06;
+  color: #333;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e0b805;
+}
+
+/* Sections */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section.light {
+  background: #f9f9f9;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-text p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.skill-box {
+  padding: 30px;
+  background: #B1DDF1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.skill-box:hover {
+  background-color: #FCCB06;
+  transform: translateY(-8px);
+}
+
+.skill-box h3 {
+  margin-bottom: 10px;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project-box {
+  padding: 30px;
+  background: #B1DDF1;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.project-box:hover {
+  background: #FCCB06;
+  transform: translateY(-8px);
+}
+
+.project-box h3 {
+  margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);   
+  grid-auto-rows: 240px;                 
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.picture {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transition: transform 0.26s ease;
+}
+
+.picture:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+/* Contact */
+.contact-info {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #FCCB06;
+}
+
+.contact-social {
+  margin-top: 20px;
+}
+
+.contact-social a {
+  color: #333;
+  font-size: 40px;  
+  margin: 0 15px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-social a:hover {
+  color: #FCCB06;
+  transform: scale(1.2);
+}
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
